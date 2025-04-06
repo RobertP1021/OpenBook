@@ -38,7 +38,7 @@ Proiectul foloseste un ESP32-C6 ca microcontroller central, cu urmatoarele compo
 
 3. **Senzor de mediu (BME688)** - masoara temperatura, umiditatea, presiunea atmosferica si calitatea aerului, conectat prin I2C.
 
-4. **Ceas RTC (DS3231)** - mentine ora exacta chiar si cand dispozitivul este oprit, conectat prin I2C, cu o precizie excelenta (±2ppm).
+4. **Ceas RTC (DS3231)** - mentine ora exacta chiar si cand dispozitivul este oprit, conectat prin I2C.
 
 5. **Sistem de alimentare**: 
    - Baterie LiPo 3.7V
