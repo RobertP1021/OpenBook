@@ -53,3 +53,38 @@ Proiectul foloseste un ESP32-C6 ca microcontroller central, cu urmatoarele compo
 
 8. **Slot card microSD** - pentru stocarea datelor in volum mare.
 
+
+## Descrierea pinilor ESP32-C6
+
+- **GPIO1-2**: Magistrala I2C principala pentru conectarea senzorilor si RTC-ului DS3231, fiind pinii hardware dedicati pentru I2C.
+
+- **GPIO3**: Pin RESET pentru reinitializarea sistemului.
+
+- **GPIO4**: SS_SD pentru selectarea cardului microSD, parte a interfetei SPI dedicate cardului.
+
+- **GPIO5**: Pin EPD_DC pentru controlul displayului E-Ink (Data/Command).
+
+- **GPIO6**: Pin SPI SCK (clock) utilizat pentru comunicatia cu displayul si alte dispozitive SPI.
+
+- **GPIO7**: Pin MOSI pentru transferul de date spre dispozitivele SPI.
+
+- **GPIO8-9**: Pini pentru interfata RTC (32kHz si INT_RTC), utilizati pentru wake-up si sincronizare.
+
+- **GPIO10**: Pin pentru controlul FLASH_CS, selectand memoria flash externa.
+
+- **GPIO11**: Pin EPD_CS pentru selectarea displayului E-Ink.
+
+- **GPIO12**: Pin EPD_RST pentru resetarea displayului E-Ink.
+
+- **GPIO13-14**: Pini USB_D- si USB_D+ pentru comunicatia USB.
+
+- **GPIO15**: Pin IO/BOOT pentru controlul bootarii sistemului.
+
+- **GPIO16-18**: Pini pentru controlul displayului e-ink (EPD_3V3, EPD_BUSY).
+
+- **GPIO19-21**: Pini SCL, SDA pentru o secunda interfata I2C folosita pentru comunicatie cu senzorii adaugati.
+
+- **GPIO22-23**: Pini pentru control I/O general si semnale de control pentru display.
+
+- **GPIO26-28**: Pini pentru LED-uri de status si controlul modulului.
+
