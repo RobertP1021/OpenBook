@@ -88,3 +88,8 @@ Proiectul foloseste un ESP32-C6 ca microcontroller central, cu urmatoarele compo
 
 - **GPIO26-28**: Pini pentru LED-uri de status si controlul modulului.
 
+## Poze
+![Screenshot 2025-04-06 211106](https://github.com/user-attachments/assets/a85283d7-237c-4e88-8208-186757081327)
+
+
+
