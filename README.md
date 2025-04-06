@@ -26,3 +26,30 @@
 | EVQPUJ02K | [Datasheet](https://industrial.panasonic.com/cdbs/www-data/pdf/ATV0000/ATV0000CE5.pdf) | [Model](https://www.snapeda.com/parts/EVQPUJ02K/Panasonic/view-part/?ref=eda) |
 | GDEH0154D67 | [Datasheet](https://www.good-display.com/companyfile/203.html) | [Model](https://www.good-display.com/product/207.html) |
 | CPH3225A | [Datasheet](https://www.sii.co.jp/en/quartz/files/2021/03/CPH3225A_E.pdf) | [Model](https://www.snapeda.com/parts/CPH3225A/Seiko+Instruments/view-part/?ref=eda) |
+
+
+## Functionalitatea hardware
+
+Proiectul foloseste un ESP32-C6 ca microcontroller central, cu urmatoarele componente principale:
+
+1. **Display E-Ink (GDEH0154D67)** - afisaj de 1.54" cu 200x200 pixeli conectat prin SPI, perfect pentru afisarea datelor cu consum minim de energie, deoarece consuma curent doar la actualizarea ecranului.
+
+2. **Memorie Flash externa (W25Q512JVEIQ)** - 64MB de stocare SPI pentru date, configuratii si loguri cand dispozitivul este in modul deep sleep.
+
+3. **Senzor de mediu (BME688)** - masoara temperatura, umiditatea, presiunea atmosferica si calitatea aerului, conectat prin I2C.
+
+4. **Ceas RTC (DS3231)** - mentine ora exacta chiar si cand dispozitivul este oprit, conectat prin I2C, cu o precizie excelenta (±2ppm).
+
+5. **Sistem de alimentare**: 
+   - Baterie LiPo 3.7V
+   - Circuit de incarcare (MCP73831)
+   - Monitor baterie (MAX17048G)
+   - Regulator LDO 3.3V (XC6220A331MR-G)
+   - Convertor 5V (pentru componente care necesita 5V)
+
+6. **Interfata USB-C** - pentru incarcare si comunicatii, cu protectie ESD (USBLC6-2SC6Y).
+
+7. **Butoane tactile (EVQPUJ02K)** - 3 butoane pentru interfata utilizator.
+
+8. **Slot card microSD** - pentru stocarea datelor in volum mare.
+
